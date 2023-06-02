@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rules-Guessing Game</title>
+    <style>
+      body {
+        /* background-color: lightslategray; */
+        background-color: #222;
+        color: #eee;
+        display: flex;
+        justify-content: space-evenlys;
+        flex-direction: column;
+        font-family: "Press Start 2P", cursive;
+        align-items: center;
+        font-size: 27px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="rules">
+      <h2>Rules</h2>
+      <p>
+        1. You need to guess a number between 1 and 100.
+        <br />
+        2. If your guess is less than 1 or greater than 100, it will be
+        considered "OUT OF BOUNDS."
+        <br />
+        3. On your first turn:
+        <br />
+        a. If your guess is within 10 of the number, you'll be told "WARM!"
+        <br />
+        b. If your guess is further than 10 away from the number, you'll be told
+        "COLD!"
+        <br />
+        4. On subsequent turns:
+        <br />
+        a. If your guess is closer to the number than your previous guess,
+        you'll be told "WARMER!"
+        <br />
+        b. If your guess is farther from the number than your previous guess,
+        you'll be told "COLDER!"
+        <br />
+        5. If your guess equals the number, you'll be informed that you've
+        guessed correctly and how many guesses it took!
+        <br />
+        6. You have 20 guesses.
+        <br />
+        7. HighScore will be displayed.
+      </p>
+    </section>
+  </body>
+</html>

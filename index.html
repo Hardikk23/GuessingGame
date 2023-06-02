@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Game</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <header class="head">
+      <button class="again">Again!</button>
+      <p>(Between 1 and 100)</p>
+      <p>
+        <a class="mainrules" href="rules.html" target="_blank">Rules</a>
+      </p>
+      <h1>Guessing Game</h1>
+    </header>
+    <main>
+      <div id="fireworks-container"></div>
+      <div class="number">
+        <h2>?</h2>
+      </div>
+      <div class="content">
+        <div class="left">
+          <h2>Guess Here:</h2>
+          <div id="guessForm">
+            <input type="number" id="guess" min="1" max="100" />
+            <button class="btncheckguess">Check Guess!</button>
+          </div>
+        </div>
+        <div class="right">
+          <p class="message">Start Guessing...</p>
+          <p class="score">Score:20</p>
+          <!-- <p class="guesses">Guesses:0</p> -->
+          <p class="highscore">Highscore:0</p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js/dist/fireworks.min.js"></script>
+  </body>
+</html>
