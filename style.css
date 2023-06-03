@@ -173,6 +173,6 @@ main {
     margin-right: auto; */
     width: 100%;
     max-width: none;
-    margin: 10px auto;
+    /*margin: 10px auto;*/
   }
 }
