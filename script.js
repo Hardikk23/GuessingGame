@@ -3,6 +3,7 @@ let score = 20;
 let highscore;
 if (localStorage.getItem("highcore")) {
   highscore = localStorage.getItem("highcore");
+  document.querySelector(".highscore").textContent = `Highscore: ${highscore}`;
 } else {
   highscore = 0;
 }
