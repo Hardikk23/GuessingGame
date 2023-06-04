@@ -71,7 +71,7 @@ function checkGuess() {
     document.querySelector(".score").textContent = `Score: ${score}`;
     prevguess.push(guess);
   }
-  document.querySelector("#guess").value = "";
+//   document.querySelector("#guess").value = "";
 }
 
 function gameReset() {
