@@ -1,8 +1,8 @@
 let num = Math.trunc(Math.random() * 101);
 let score = 20;
 let highscore;
-if (localStorage.getItem("highcore")) {
-  highscore = localStorage.getItem("highcore");
+if (localStorage.getItem("highscore")) {
+  highscore = localStorage.getItem("highscore");
   document.querySelector(".highscore").textContent = `Highscore: ${highscore}`;
 } else {
   highscore = 0;
