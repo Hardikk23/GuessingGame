@@ -1,6 +1,11 @@
 let num = Math.trunc(Math.random() * 101);
 let score = 20;
-let highscore = 0;
+let highscore;
+if (localStorage.getItem("highcore")) {
+  highscore = localStorage.getItem("highcore");
+} else {
+  highscore = 0;
+}
 let prevguess = [];
 const audio = document.createElement("audio");
 audio.src = "music.mp3";
@@ -33,6 +38,7 @@ function checkGuess() {
     document.querySelector(".score").textContent = `Score: ${score}`;
     document.querySelector(".btncheckguess").disabled = true;
     document.querySelector(".number").textContent = num;
+    localStorage.setItem("highscore", highscore);
     audio.play();
     setTimeout(() => {
       audio.pause();
